@@ -1,0 +1,35 @@
+[project]
+name = "inteligentni-sistemi"
+version = "0.1.0"
+description = "Detekcija vozila u saobraćaju - Inteligentni sistemi"
+readme = "README.md"
+requires-python = ">=3.12, <3.13"
+dependencies = [
+    "torch>=2.1.0",
+    "torchvision>=0.16.0",
+    "matplotlib>=3.7.0",
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+    "pillow>=10.0.0",
+    "tqdm>=4.65.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.3.0",
+    "seaborn>=0.12.0",
+    "pycocotools>=2.0.0",
+    "tensorboard>=2.13.0",
+    "albumentations>=1.3.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-rocm"
+url = "https://download.pytorch.org/whl/rocm6.4"
+
+# ⚠️ VAŽNO: Zbog hardverskih razlika, PyTorch se instalira ovako:
+#
+#   AMD ROCm (Linux):
+#     uv sync --extra-index-url https://download.pytorch.org/whl/rocm6.4
+#
+#   NVIDIA CUDA (Windows/Linux):
+#     uv sync  # PyPI podrazumevano nudi CUDA verziju
+#
+#   Detaljnije u README.md

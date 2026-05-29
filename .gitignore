@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+
+# ML artifacts
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+
+# TensorBoard logs
+runs/
+tensorboard_logs/
+
+# Dataset (raw slike su velike)
+data/raw/*.jpg
+data/raw/*.png
+data/raw/*.mp4
+!data/raw/.gitkeep
+
+
+# Dokumentacija
+*.pdf
+!README.md
