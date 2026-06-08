@@ -1,0 +1,12 @@
+# YOLO Podešavanja - Detekcija objekata u saobraćaju
+# Automatski generisano - podela dataset-a
+# Treniranje: 280 primera
+# Validacija: 60 primera
+# Testiranje: 61 primera
+
+train: images/treniranje
+val: images/validacija
+test: images/testiranje
+
+nc: 3
+names: ['Car', 'Pedestrian', 'Bicycle']

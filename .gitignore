@@ -21,13 +21,22 @@ wheels/
 runs/
 tensorboard_logs/
 
+# Treninzi (napredak)
+napredak/
+
+# Stari folderi (obrisani)
+results/
+
 # Dataset (raw slike su velike)
 data/raw/*.jpg
 data/raw/*.png
 data/raw/*.mp4
 !data/raw/.gitkeep
 
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# Dokumentacija
-*.pdf
-!README.md
+napredak/ echo runs/
